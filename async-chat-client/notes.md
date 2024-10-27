@@ -1,11 +1,11 @@
 ### Requirements:
 
 - **Command-line Arguments & Environment Variables:**
-    - Uses the clap crate to parse command-line arguments (host, port, and username).
+    - Uses the `clap` crate to parse command-line arguments (host, port, and username).
     - Environment variables (HOST, PORT, and USERNAME) are fallback options.
 - **Networking:**
-    - A TcpStream is created to connect to the specified server.
-    - The Poll and Events are used to asynchronously handle events like reading from the TCP stream or stdin.
+    - A `TcpStream` is created to connect to the specified server.
+    - The `Poll` and `Events` are used to asynchronously handle events like reading from the TCP stream or stdin.
 - **Handling Events:**
     - The client listens for incoming messages from the server or inputs from the user.
     - When the user types send <MSG>, the message is sent to the server.

@@ -4,4 +4,4 @@
 - **Message Broadcasting:** Messages are broadcasted to all users except the sender.
 - **Leave or Disconnect:** When a user sends a /leave message or disconnects, the server removes the user from the active user list.
 - **Threaded for Concurrency:** Each client connection is handled in a separate thread for parallelism, ensuring low latency for multiple users.
-- **Memory Efficient:** The server uses Arc<Mutex<>> and Arc<String> to share state (user connections and usernames) between threads with minimal memory overhead.
+- **Memory Efficient:** The server uses `Arc<Mutex<>>` and `Arc<String>` to share state (user connections and usernames) between threads with minimal memory overhead.
